@@ -6,7 +6,7 @@
  * @author Semenov Alexander <semenov@skeeks.com>
  */
 
-namespace skeeks\yii2\multiLanguage;
+namespace accami\yii2\multiLanguage;
 
 use yii\base\InvalidConfigException;
 use yii\web\Application;

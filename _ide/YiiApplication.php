@@ -11,7 +11,7 @@
 
 namespace yii\web;
 
-use skeeks\yii2\multiLanguage\MultiLangComponent;
+use accami\yii2\multiLanguage\MultiLangComponent;
 
 /**
  * @property MultiLangComponent $multiLanguage
