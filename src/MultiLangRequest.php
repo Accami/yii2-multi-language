@@ -61,7 +61,11 @@ class MultiLangRequest extends Request
             //В настройки проекта записываем язык из строки запроса
             \Yii::$app->language = $lang_from_url;
             //Определение home page url, возможно тут надо переделать возможно надо переписать метод Request::getBaseUrl();
-            \Yii::$app->homeUrl = \Yii::$app->homeUrl . $lang_from_url;
+            if(!empty($lang_from_url)) {
+                \Yii::$app->homeUrl = \Yii::$app->homeUrl . "/".$lang_from_url;
+            }else {
+                \Yii::$app->homeUrl = \Yii::$app->homeUrl . $lang_from_url;
+            }
 
 
             //Если в запросе есть указание языка, то его нужно вырезать
