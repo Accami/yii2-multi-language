@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "skeeks\\yii2\\multiLanguage\\": "src/"
+            "accami\\yii2\\multiLanguage\\": "src/"
         }
     }
 }
